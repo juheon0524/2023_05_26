@@ -1,0 +1,26 @@
+        /*left slider*/
+        $(function(){
+            $(".header_bottom_left").mouseenter(function(){
+                if($(".header_bottom_left_hover").css("display")=="none"){
+                    $(".header_bottom_left_hover").animate({
+                        width:"toggle",
+                        height:"toggle",
+                        opacity:"1"
+                    },"slow");
+                }
+            });
+            $(".hover_close1").click(function(){
+                $(".header_bottom_left_hover").animate({
+                    width:"toggle",
+                    height:"toggle",
+                    opacity:"0"
+                },"slow");
+            });
+            $(".hover_close2").click(function(){
+                $(".header_bottom_left_hover").animate({
+                    width:"toggle",
+                    height:"toggle",
+                    opacity:"0"
+                },"slow");
+            });            
+        });

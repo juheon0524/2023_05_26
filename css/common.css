@@ -1,0 +1,100 @@
+@charset "utf-8";
+        * {margin:0; padding:0;}
+        a {text-decoration: none; color:#000;}
+        /*top 배너*/
+        #top_banner {width:100%; height:70px; margin:0 auto; display:flex; flex-direction: row; justify-content: center;}
+        .top_banner_left_wrap {background-color: #e3d1fb; width:100%; height:100%;}
+        .top_banner_left {width:540px; height:100%; float:right; cursor:pointer;}
+        .top_banner_right_wrap {background-color: #ff8225; width:100%; height:100%;}
+        .top_banner_right {width:540px; height:100%; float:left; position:relative; cursor:pointer;}
+        #top_banner span {position:absolute; top:0; right:0; cursor:pointer;}
+
+
+        /*header_top*/
+        #header_top {background-color: #eee; height:35px;}
+        .header_top_nav {width:1080px; display:flex; flex-direction: row; justify-content: space-between; margin:0 auto; height:100%;}
+
+        /*header_top_left*/
+        .header_top_left {width:350px; display:flex; flex-direction: row;}
+        .header_top_left > li {padding:10px; font-size:12px; border:1px solid #ccc; width:30px; text-align: center; }
+        .header_top_left > li:last-child { background-color: #fff; border-bottom: 1px solid #fff;}
+        .header_top_left_li > a {color:#ef544d;} 
+
+        /*header_top_right*/
+        .header_top_right {width:630px; display:flex; flex-direction: row; margin-left: 180px;}
+        .header_top_right > li > a:hover {color:#ef544d;}
+        .header_top_right > li {padding:10px; font-size: 12px;}
+        .mypage {position:relative;}
+        .mypage_list {display:none; height:100px; padding:10px 0px; line-height:20px; border:2px solid #ef544d; position:absolute; top:30px; left:-27px; width:100px; z-index:2; background-color:#fff;}
+        .mypage_list > li {margin:0 0 0 10px;}
+        .mypage_list > li > a:hover {color:#ef544d;}
+        .language {position:relative;}
+        .language_list {display:none; height:60px; padding:10px 0px; line-height:20px; border:2px solid #ef544d; position:absolute; top:30px; left:-10px; width:80px; z-index:2; background-color:#fff;}
+        .language_list > li {margin:0 0 0 20px;}
+        .language_list > li > a:hover {color:#ef544d;}  
+        
+        /*header_mid*/
+        #header_mid {width:1080px; margin:0 auto; height:auto; display:flex; flex-direction: row; justify-content: space-between;}
+        #heaeder_search {display:flex; flex-direction: column;}
+        .header_search_bar {width:450px; border-bottom:4px solid #ef544d; display: flex; flex-direction: row; justify-content: space-between;}
+        .header_search_bar > a > img {width:40px; height:40px; margin-top:10px;}
+        .search_bar_text {width:400px; height:40px; margin-top:10px; margin-bottom:5px; border:none; padding-left:10px; font-size: 15px; font-weight: 600;}
+        .header_search_nav {display:flex;}
+        .header_search_nav > li > a {color:#00adef; line-height: 40px; font-size: 12px; padding:5px 10px;}
+
+        /*header_bottom*/
+        #header_bottom { width:100%; height:auto; margin:0 auto;}
+        .parent {position:relative;}
+
+        /*nav*/
+        #header_bottom_nav {width:100%; height:60px; background-color:#ef544d; display:flex;justify-content:center; border-top: 2px solid #000; position:relative;}
+        .category1 {width:180px; font-size:20px; padding:20px; background-color:#c43730;}
+        .category1:hover {background-color:#850000; cursor:pointer;}
+        .category1 > li > a {color:#fff;}
+        .category1 > li > a:hover {color:#fff1a2;}
+        .category2 {width:820px; display:flex; font-size:20px; margin:20px;}
+        .category2 li {margin:0 15px;}
+        .category2 > li > a {color:#fff;} 
+        #up1 {display:none;}
+
+
+        /*nav_slide*/
+        .nav_slide {position:absolute; top:60px; left:0px; z-index:5; width:900px; height:620px; background-color:#fff; border-bottom:2px solid #ef544d; border-left: 2px solid #ef544d; border-right: 2px solid #ef544d; display:none;}
+        .nav_slide > ul {display:flex; flex-wrap:wrap;}
+        .nav_slide > ul > li {width:295px; line-height:25px; border-right:1px solid #eee;}
+        .nav_slide > ul > li > span {font-size:20px; margin-left:30px;line-height:40px;}
+        .nav_slide > ul > li:last-child {border:none;}
+        .nav_slide_book > li {display:flex; justify-content: space-between; width:200px; margin:5px 30px; font-size:12px;}
+        .nav_slide_book > li > span > a:hover {color:#ef544d;}
+
+
+
+
+
+        /*footer*/
+        footer {width:100%; height:auto; border-top:1px solid #000;}
+        .footer_wrap {width:1080px; height:auto; margin:0 auto;}
+        .footer_top {width:1080px; height:40px;}
+        .footer_top > ul {display:flex;}
+        .footer_top > ul > li {font-size:12px; font-family:sans-serif; color:#b8b8b8; padding:10px 5px 0px 5px;}
+        .footer_top > ul > li > a {font-size:12px; font-family:sans-serif; color:#b8b8b8; padding-top:10px;}        
+        .footer_top > ul > li > span {font-size:12px; font-family:sans-serif; color:#2a2a2a;}
+
+        .footer_mid {width:1080px; height:200px; display:flex; justify-content: space-between;}
+        .footer_mid_box1 {width:300px; height:200px;}
+        .footer_mid_box1 > ul > li > a {font-size:12px; line-height:20px; color:#888888;}
+        .footer_mid_box1 > ul > .footer_li > a {font-size:15px; font-weight:bold; padding-bottom:10px; color:#000; line-height:30px;}
+
+        .footer_mid_box2 {width:300px; height:200px;}
+        .footer_mid_box2 > ul > li {font-size:12px; line-height:30px; color:#888888;}
+        .footer_mid_box2 > ul > .footer_li > a {font-size:15px; font-weight:bold; color:#000; line-height:30px;}
+        .footer_mid_box2 > ul > .footer_li > a > img {cursor: pointer;}
+
+        .footer_mid_box3 {width:350px; height:200px;}
+        .footer_mid_box3 > ul > li {font-size:12px; line-height:30px; color:#888888;}
+        .footer_mid_box3 > ul > li > img {cursor: pointer;}
+        .footer_mid_box3 > ul > .footer_li > a {font-size:15px; font-weight:bold; color:#000; line-height:30px;}
+
+        .footer_bottom {width:1080px; height:60px; line-height:20px;}
+        .footer_bottom > p {font-size:11px; font-family:sans-serif; color:#666666;}
+        .footer_bottom > span {font-size:11px; font-family: sans-serif; color:#b8b8b8;}
